@@ -1,0 +1,51 @@
+---
+title: Why sleekerCSS
+description: The problem with current toolings and why we created sleekerCSS
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## The Problem
+
+Among all the ways you can style your website, using a utility-class framwork (like tailwindCSS, UnoCSS , ... )  has huge benfits.
+
+Actually we think its the best way (in most cases) and dived deep [comparing all the ways to style a website here](/why/css-approaches).
+
+But, the utility-class frameworks can do better.
+
+current farameowrks are not going into that direction, and that's why we created SleekerCSS.
+
+
+## Philosophy
+
+SleekerCSS is built we a mindset or philosophy in mind, which is the result of our experience with other toolings.
+
+In fact, for that reason, the syntax and API where designed first, after that implimentation was done.
+
+Here we want to share our mindset with you. 
+
+- Shorter Utility Class Names ⇒ Cleaner and More Readable Markup
+- No Random Class Names, Consnstent and Pattern-based Naming for Classes based on CSS syntax ⇒ Read and Guess class names without docs
+- Modern CSS features ⇒ Apps for 2023
+    - Container Query + Media Query
+    - Logical Perperties (padding-inline, …)
+- No Cancelation, No side effect handling. Just building on top, one rule at a time
+- CSS Variables naming aligned with class names
+- No JSON Config file, CSS is you Config File
+    - you can’t make the syntax completly different
+- Create Composed classes on the fly, without config, css, or anything
+    - `<button class='btn=[ pi1 pb3 r1 ] '>my button</button> `
+- base on best practices
+    - using `rem` for media queries by default, to account for font increase in browser setting.
+- `Rem` is primary unit. ⇒ no math on your head.
+    - This might be removed as we use a lot of `0.5rem` and `0.75rem` in the markup and its ugly.
+    - But at the same time, for larger numbers the math is cumbersome, like `@w>100` you need to do math `100 / 4 = 25rem` in your head
+- giving all control to developers
+    - no oponiated `sm:` or forcing mobile first.
+
+## Solution
+
+
+## Inspiration 
+
+
