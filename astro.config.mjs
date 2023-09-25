@@ -3,7 +3,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://sleeker-css.github.io',
+	site: 'https://sleeker-ways.github.io',
+	base: '/sleeker-css-docs',
 	integrations: [
 		starlight({
 			logo: {
