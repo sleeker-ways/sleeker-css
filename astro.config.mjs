@@ -3,8 +3,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://sleeker-ways.github.io',
-	base: '/sleeker-css-docs',
+	site: 'https://sleeker-ways.github.io/',
+	base: '',
 	integrations: [
 		starlight({
 			logo: {
@@ -32,7 +32,7 @@ export default defineConfig({
 						// Each item here is one entry in the navigation menu.
 						{ label: 'Install', link: '/install/' },
 						{ label: 'Why SleekerCSS', link: '/why/' },
-						{ label: 'Quick Learn', link: '/quick-learn/' },
+						{ label: 'Quick Tutorial', link: '/quick-tutorial/' },
 					],
 				},
 				{
